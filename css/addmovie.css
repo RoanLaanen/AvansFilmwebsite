@@ -1,0 +1,75 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "c c c"
+    "c c c"
+    "c c c"
+    "d d d";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.addMovieForm {
+  grid-area: c;
+  background-color: #1c1b1f;
+  width: 40vw;
+  color: white;
+  margin-left: 2.5vw;
+  box-sizing: border-box;
+  height: 70vh;
+  border-radius: 0.5vw;
+  align-self: center;
+  padding: 1.5vw;
+  justify-self: center;
+}
+
+.addMovieForm > input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 0.25vw;
+  width: 100%;
+  height: 5vh;
+  font-size: 1.5vw;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+
+.addMovieForm > input[type="submit"]:hover {
+  background-color: rgb(246, 114, 90);
+}
+
+.addMovieForm > input[type="submit"]:active {
+  background-color: tomato;
+}
+
+.addMovieForm > input[type="text"] {
+  margin-bottom: 1vh;
+  width: 100%;
+  height: 2.5vh;
+}
+
+#movieDescription {
+  width: 100%;
+  height: 10vh;
+}
+
+.formHeader {
+  font-size: 2vw;
+  width: 100%;
+  height: 1vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.footer {
+  grid-area: d;
+}

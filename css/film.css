@@ -1,0 +1,167 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c"
+    "d d e"
+    "d d e"
+    "d d e"
+    "f f f";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  grid-gap: 1vw;
+}
+
+.grid-header {
+  grid-area: b;
+  background-color: #1c1b1f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  font-weight: bold;
+  height: 7.5vh;
+  width: 95vw;
+  margin-left: 2.5vw;
+  border-radius: 0.5vw;
+}
+
+.grid-breadcrumbs {
+  grid-area: c;
+  background-color: #1c1b1f;
+  width: 95vw;
+  height: 5vh;
+  width: 95vw;
+  margin-left: 2.5vw;
+  color: white;
+  line-height: 5vh;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+.grid-breadcrumbs > span {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.grid-content {
+  grid-area: d;
+  background-color: #1c1b1f;
+  width: 67.5vw;
+  color: white;
+  margin-left: 2.5vw;
+  box-sizing: border-box;
+  height: 60vh;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+.filmInfo {
+  width: 50%;
+  height: 100%;
+  padding: 1vw;
+  box-sizing: border-box;
+  float: left;
+}
+
+.filmReviews {
+  width: 50%;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1vw;
+  float: left;
+}
+
+.review {
+  width: 100%;
+  max-height: 15vh;
+  background-color: rgb(91, 91, 91);
+  margin-bottom: 1vw;
+  box-sizing: border-box;
+  padding: 1vh;
+  border-radius: 0.25vw;
+}
+
+.reviewAuthor {
+  width: 80%;
+  float: left;
+  font-weight: bold;
+}
+
+.footer {
+  grid-area: f;
+}
+
+.reviewStars {
+  float: right;
+}
+.reviewContent {
+  font-size: 0.9vw;
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.acteurLink {
+  font-weight: bolder;
+  color: #0000;
+  background: linear-gradient(90deg, tomato 50%, #fff 0) var(--_p, 100%) / 200%
+    no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.acteurLink:hover {
+  --_p: 0%;
+}
+
+.grid-right {
+  grid-area: e;
+  background-color: #1c1b1f;
+  border-radius: 0.5vw;
+  width: 20vw;
+  margin-left: 1vw;
+  height: 60vh;
+  padding: 1vw;
+  box-sizing: border-box;
+  float: left;
+}
+
+#filmImg {
+  margin-left: 1.5vw;
+  border-radius: 0.5vw;
+  height: 47.5vh;
+  width: 15vw;
+}
+
+.buyTicketBtn {
+  margin-left: 1.5vw;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 0.25vw;
+  width: 15vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-top: 1vw;
+  user-select: none;
+  line-height: 5vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buyTicketBtn:hover {
+  background-color: rgb(246, 114, 90);
+}
+
+.buyTicketBtn:active {
+  background-color: tomato;
+}
